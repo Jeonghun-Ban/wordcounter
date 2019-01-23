@@ -1,9 +1,21 @@
-<h1>워드카운트</h1>
+<!DOCTYPE html>
+{% load static %}
 
-<a href="{% url 'about' %}">ABOUT</a>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+  </head>
+  <body>
+    <h1>"WORD COUNT"</h1>
 
-<form action="{%url 'result'%}">
-    <textarea cols=40 rows=10 name="fulltext"></textarea>
-    <br>
-    <input type="submit" value="count!">
-</form>
+    <form action="{%url 'result'%}">
+        <textarea cols=40 rows=25 name="fulltext"></textarea>
+        <br>
+        <input type="submit" value="count!">
+    </form>
+
+    <a href="{% url 'about' %}">ABOUT</a>
+  </body>
+</html>
