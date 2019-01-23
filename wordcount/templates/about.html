@@ -1,3 +1,15 @@
-<h1>설명</h1>
+<!DOCTYPE html>
+{% load static %}
 
-<a href="{%url 'home'%}">HOME</a>
+<html lang="ko" dir="ltr">
+  <head>
+        <meta charset="utf-8">
+        <title>About</title>
+        <link rel="stylesheet" href="{% static 'css/about.css' %}">
+  </head>
+  <body>
+        <h1>About</h1>
+        <h3>멋쟁이 사자처럼 7기</h3>
+        <h3>운영진 교육 1차 과제 프로젝트입니다.</h3>
+        <a href="{%url 'home'%}">HOME</a>
+  </body>

@@ -1,12 +1,23 @@
-<h1>당신이 입력한 텍스트는 {{length}}개로 구성되어 있습니다.</h1>
+<!DOCTYPE html>
+{% load static %}
 
-<a href = "{% url 'home'%}">다시하기</a>
-<br>
-<h2> 입력한 텍스트 : </h2>
-{{full}}
+<html lang="ko" dir="ltr">
+  <head>
+        <meta charset="utf-8">
+        <title>Result</title>
+        <link rel="stylesheet" href="{% static 'css/result.css' %}">
+  </head>
+  <body>
+        <h1>당신이 입력한 텍스트는 {{length}}개로 구성되어 있습니다.</h1>
 
-<h2> 단어 카운트 : </h2>
-{% for word, time in dict %}
-{{word}} : {{time}}
-<br>
-{% endfor %}
+        <a href = "{% url 'home'%}">다시하기</a>
+        <br>
+        <h2> 입력한 텍스트 : </h2>
+        {{full}}
+        
+        <h2> 단어 카운트 : </h2>
+        {% for word, time in dict %}
+        {{word}} : {{time}}
+        <br>
+        {% endfor %}
+  </body>
