@@ -7,7 +7,10 @@ h1{
 .text{
     margin: 30px;
 }
-input{
-    display: block;
+.button{
+    text-align: center;
+}
+
+.about {
     text-align: center;
 }
