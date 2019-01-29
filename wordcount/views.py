@@ -18,4 +18,4 @@ def result(request):
         else:
             word_dict[word]=1
 
-    return render(request, 'result.html', {'full' : text, 'length' : len(words), 'dict': word_dict.items()})
+    return render(request, 'result.html', {'text' : text, 'length' : len(words), 'dict': word_dict.items()})

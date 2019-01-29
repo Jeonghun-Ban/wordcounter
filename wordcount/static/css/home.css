@@ -1,19 +1,13 @@
 * {
     font-family: 'Nanum Gothic', sans-serif;
 }
-body{
-	position: fixed; 
-	overflow-y: scroll;
-	width: 100%;
-}
-h1 {
-    text-align: center;
-    padding: 30px;
-}
-div{
+h1{
     text-align: center;
 }
-.text {
-    padding-left: 60px;
-    padding-right: 60px;
+.text{
+    margin: 30px;
+}
+input{
+    display: block;
+    text-align: center;
 }
