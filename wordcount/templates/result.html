@@ -11,19 +11,24 @@
     </head>
     <body>
       <div class="container">
+        <br>
         <h1>Result</h1>
         <h3>당신이 입력한 텍스트는 <small class="text-muted">{{length}}</small>개로 구성되어 있습니다.</h3>
         <br>
         <h5> 입력한 텍스트 : </h5>
         {{text}}
-          
+        <br>
+        <br>
         <h5> 단어 카운트 : </h5>
         {% for word, time in dict %}
         {{word}} : {{time}}
         <br>
         {% endfor %}
-
-        <a href = "{% url 'home'%}">다시하기</a>
+        <br>
+        <div class="text-center" >
+<a href = "{% url 'home'%}">다시하기</a>
+        </div>
+        
       </div>
       
     </body>
