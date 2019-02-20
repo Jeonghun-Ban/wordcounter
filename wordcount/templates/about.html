@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-{% load static %}
 
 <html lang="ko" dir="ltr">
-  <head>
-        <!--bootstrap cdn-->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-        <meta charset="utf-8">
-        <title>About</title>
-        <link rel="stylesheet" href="{% static 'css/about.css' %}">
-  </head>
-  <body>
-        <br>
-        <h1>About</h1>
-        <br>
-        <h3>멋쟁이 사자처럼 7기</h3>
-        <h3>운영진 교육 1차 과제 프로젝트입니다.</h3>
-        <br>
-        <a href="{%url 'home'%}">HOME</a>
-  </body>
+<head>
+      <!--bootstrap cdn-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+            integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+      <meta charset="utf-8">
+      <title>About</title>
+</head>
+
+<body>
+      <div class="modal-body">
+            <div class="countainer-fluid text-center">
+                  <br>
+                  <h1>About</h1>
+                  <br>
+                  <h3>멋쟁이 사자처럼 7기</h3>
+                  <h3>운영진 교육 1차 과제 프로젝트입니다.</h3>
+                  <br>
+                  <a href="{%url 'home'%}">HOME</a>
+            </div>
+      </div>
+</body>
